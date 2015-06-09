@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Losers Gainers Table</title>
+
+		<!-- Framework -->
+			<script src="js/stockrender-apprender.1.0.0.min.js"></script>
+		<!-- Framework -->
+
+		<!-- Supplementary Code -->
+		<!-- JS -->
+		    <script src="js/LosersGainersFunctions.js"></script> 
+		    <script src="js/jquery-2.1.3.min.js"></script>
+       		<script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+  			<script src="js/jscolor-1.4.4/jscolor/jscolor.js"></script> 
+		<!-- JS -->
+
+		<!-- Supplementary Code -->
+		<!-- CSS -->
+			<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+			<link rel="stylesheet" type="text/css" href="css/LoserGainersCSS.css">
+		<!-- CSS -->
+		
+	</head>
+	
+	<body>
+
+		<div id="settings" title="Settings">
+    		<script>  $("#settings").hide(); </script>
+
+		      	<label id = "lblText">Text Size: </label>
+		      	<label id = "lblColor">Color Scheme: </label>
+		      	<label id = "lblTextColor">Text Color: </label>
+		      	<input id = "btnTextColor" class="color" value="000000"></input>
+		      	<input id = "inpColorScheme1" class="color" value="A8C6FA"></input>
+		      	<input id = "inpColorScheme2" class="color" value="FFFFFF"></input>
+
+     	 	<input id = "inpText" type="number" min="12" max="20" step="1" value="16"> 
+  		</div>
+ 
+  		<button id="opener"><i class="icon ion-android-settings"> </i></button>
+
+  		<br></br>
+
+		<div>
+			<table width = "50%" cellspacing="0" border="2" cellpadding="9" id="table1" class="table1">
+		   
+		    <col width="25%">
+		    <col width="25%">
+		    <col width="25%">
+		    <col width="25%">
+
+		    <tr>
+		        <th><p>Losers</p></th>
+		        <th><p>% Change</p></th>
+		        <th><p>Gainers</p></th>
+		        <th><p>% Change</p></th>
+		    </tr>
+		    <tr>
+		    	<th colspan = "4" >
+
+		 		<button onclick="addRowFunction()"> <i class="icon ion-android-add"></i> </button>
+		      	<button onclick="deleteRow(this)"> <i class="icon ion-android-remove"> </i> </button>
+
+		     	</th>
+		    </tr>
+			</table>
+		</div>
+
+		<style>
+			tr:nth-child(odd){
+			    color: solid black;
+			    font-size: 12;
+			    background-color: #a8c6fa;
+			}
+		</style>
+
+	</body>
+
+</html>
