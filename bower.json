@@ -1,0 +1,32 @@
+{
+  "name": "Stockrender-Fundamental-App",
+  "version": "0.0.1",
+  "homepage": "https://github.com/StockRender/SR-widget-fundamentals",
+  "authors": [
+    "asosnovsky <arielsosnovsky@gmail.com>",
+    "Marcin Zegarmistrz",
+    "Richard Ren",
+    "Luke Caccamo"
+  ],
+  "description": "Stockrender fundamentals application",
+  "main": "index.html",
+  "keywords": [
+    "stockrender"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "async": "~1.2.1",
+    "numeraljs": "~1.5.3",
+    "bootstrap": "~3.3.4",
+    "tablesorter": "*",
+    "bootstrap-tagautocomplete": "*",
+    "typeahead.js": "~0.11.1"
+  }
+}

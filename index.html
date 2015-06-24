@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stockrender-Table App</title>
+		<!-- CSS -->
+			<!-- Bower -->
+				<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+			<!-- Bower -->
+			<!-- Supplementary Code -->
+				<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
+				<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+				<link rel="stylesheet" type="text/css" href="css/main.css">
+			<!-- Supplementary Code -->
+		<!-- CSS -->
+		<!-- JS -->
+			<!-- Vendors -->
+				<!-- Framework -->
+					<script src="vendors/stockrender/apprender.launch.js"></script>
+				<!-- Framework -->
+				<!-- Bower -->
+					<script src="bower_components/numeraljs/numeral.js"></script>
+					<script src="bower_components/async/lib/async.js"></script>
+					<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+					<script src="bower_components/tablesorter/jquery.metadata.js"></script>
+					<script src="bower_components/tablesorter/jquery.tablesorter.min.js"></script>
+					<script src="bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+				<!-- Bower -->
+			<!-- Vendors -->
+			<!-- Supplementary Code -->
+					<script src="js/table.js"></script>
+					<script src="js/memory.js"></script>
+					<script src="js/typeahead.js"></script>
+					<script src="js/alerts.js"></script>
+					<script src="js/settings.js"></script>
+					<script src="js/main.js"></script>
+			<!-- Supplementary Code -->
+		<!-- JS -->
+	</head>
+	<body>
+		<div class="overhead loading">
+			<div class="spinner"></div>
+			<span> Loading...</span>
+		</div>
+		<div style="padding: 2%;">
+			<div class="row desk">
+				<div class="input-group col-sm-6 col-md-6 col-lg-6">
+					<input class="form-control" id="ticker" placeholder="Ticker/Stock Name" type="text">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default" id="addToTable"><i class="glyphicon glyphicon-plus"></i></button>
+						<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settings-modal"><i class="glyphicon glyphicon-cog"></i>
+						 --></button>
+					</div>
+				</div>
+				<div class="input-group col-sm-6 col-md-6 col-lg-6">
+					<div class="alert alert-success popup-msg" role="alert">
+						<a href="#" class="alert-link"></a>
+					</div>
+					<div class="alert alert-danger popup-msg" role="alert">
+						<a href="#" class="alert-link"></a>
+					</div>
+				</div>
+				<!-- <div class="input-group col-sm-2 col-md-2 col-lg-2">
+					
+				</div> -->
+			</div>
+			<div class="row">
+				<table class="table table-hover table-striped">
+					<thead> 
+						<tr>
+							<th class="companyname-tb">Company Name</th>
+							<th class="industry-tb">Industry</th>
+							<th class="sector-tb">Sector</th>
+							<th class="number-tb">Percentage Change</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody> 
+				</table>
+			</div>
+		</div>
+		<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="settings-modalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="settings-modalLabel">Settings</h2>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<h4>Toggle Table</h4>
+							<ul style="list-style: none;">
+								<li><input type="checkbox" aria-label="sector-toggle" class="settings-toggler" id="sector-toggle"> Sector</li>
+								<li><input type="checkbox" aria-label="industry-toggle" class="settings-toggler" id="industry-toggle"> Industry</li>
+								<li><input type="checkbox" aria-label="change-toggle" class="settings-toggler" id="change-toggle"> Change</li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

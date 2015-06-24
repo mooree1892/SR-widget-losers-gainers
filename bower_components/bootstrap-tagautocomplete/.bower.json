@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-tagautocomplete",
+  "homepage": "https://github.com/Sandglaz/bootstrap-tagautocomplete",
+  "_release": "de8c4aa2da",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "de8c4aa2da6f13c953bbf5196dfbadae538bea7d"
+  },
+  "_source": "git://github.com/Sandglaz/bootstrap-tagautocomplete.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-tagautocomplete"
+}
